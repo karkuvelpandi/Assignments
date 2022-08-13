@@ -30,7 +30,7 @@ a= 100<=a<=999 ?console.log('yes this is 3 digit number'):console.log('No this i
 b%2==0 ? console.log ("Yes this is a even number"):console.log ("No this is not a even number")
 
 //Assignment No : 6  (Big number)
-b<a ?console.log('biggest number is',a):console.log('biggest number is',b)
+b<a ?console.log("biggest number is",a):console.log("biggest number is",b)
 
 //Assignment No : 7  (Small number)
-b<a ?console.log('Smallest number is',b):console.log('smallest number is',a)
+b<a ?console.log("Smallest number is",b):console.log("smallest number is",a)

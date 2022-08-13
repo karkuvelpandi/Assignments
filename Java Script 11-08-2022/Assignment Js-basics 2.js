@@ -4,10 +4,10 @@ let c=630
 
 
 //Assignment No : 7  (Big number)
-b<a ?console.log('biggest number is',a):console.log('biggest number is',b)
+b<a ?console.log("biggest number is",a):console.log("biggest number is",b)
 
 //Assignment No : 8  (Small number)
-b<a ?console.log('Smallest number is',b):console.log('smallest number is',a)
+b<a ?console.log("Smallest number is",b):console.log("smallest number is" ,a)
 
 //Assignment No : 9   (Bigest number)
 var x= Math.max(a,b,c)
