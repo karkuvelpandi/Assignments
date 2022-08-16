@@ -54,16 +54,26 @@ while(e<=10){
     console.log("6*",e,"=",e*6)
     e=e+1
 } 
-
-//Assignment no 10 - Factors of 24
-
+//Assignment no 10 - Factors of 24 while
+var y=1
+while(y<=24){
+    if(24%y==0)
+    console.log(y)
+    y=y+1
+}
 
 
 //Assignment no 10 - Factors of 24 forloop
 
+for(var l=1; l<=24; l=l+1){
+    if(24%l==0)
+    console.log(l)
+}
 
 //Assignment no 12 
 
 //Assignment no 13
+//Assignment no 14
+
 
 
