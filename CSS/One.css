@@ -1,0 +1,16 @@
+h2{
+  background-color: blue;
+}
+
+.jho{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    text-decoration-line: underline;
+}
+#007{
+    background-color:aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(255, 0, 0);
+    text-decoration-line: underline;
+}
