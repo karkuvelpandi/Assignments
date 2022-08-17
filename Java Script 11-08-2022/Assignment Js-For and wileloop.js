@@ -73,7 +73,15 @@ for(var l=1; l<=24; l=l+1){
 //Assignment no 12 
 
 //Assignment no 13
-//Assignment no 14
 
+//Assignment no 14 Fibonacci
+let n1=0;
+let n2=1;
+for(let i=1; i<=10; i++){
+    console.log(n1)
+    n3=n1+n2
+    n1=n2
+    n2=n3
+}
 
 
