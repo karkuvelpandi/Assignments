@@ -1,9 +1,17 @@
 
 
 
-function changeColor(){
-    let tag_Ref =document.getElementById('button1').style.backgroundColor="blue"
+
+function wish(message,name ){
+    if(name){
+        console.log(name+"  Goodmorning");
+    }
+    else{
+        console.log("Name is not avilable")
+        console.log(message+"  Good morning");
+    }
 }
+wish( "hello")
 
 /*function wish() {
     let tag_Ref = document.getElementById('efg').style.backgroundColor = "blue"
