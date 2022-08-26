@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 26px;
+        }
+
+        table {
+            margin: auto
+        }
+
+        input {
+            font-size: 26px;
+            border-color: black;
+            border-radius: 6px;
+            border-radius: 12px;
+        }
+
+        button {
+            font-size: 24px;
+            background-color: aqua;
+            width: 73px;
+            height: 50px;
+            border-radius: 12px;
+        }
+
+        .calci {
+            border: 2px solid black;
+            display: inline-block;
+            background-color: black;
+            padding: 6px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8 ">
+                <div class="calci">
+                    <div>
+                        <input type="text" id="screen">
+                    </div>
+                    <table>
+                        <t-body>
+                            <tr>
+                                <td><button>1</button></td>
+                                <td><button>2</button></td>
+                                <td><button>3</button></td>
+                                <td><button>+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button>4</button></td>
+                                <td><button>5</button></td>
+                                <td><button>6</button></td>
+                                <td><button>-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button>7</button></td>
+                                <td><button>8</button></td>
+                                <td><button>9</button></td>
+                                <td><button>*</button></td>
+                            </tr>
+                            <tr>
+                                <td><button>0</button></td>
+                                <td><button>/</button></td>
+                                <td><button>C</button></td>
+                                <td><button>
+                                        = </button>
+                                </td>
+                            </tr>
+
+                        </t-body>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let screen = document.getElementById("screen");
+        buttons = document.querySelectorAll('button');
+        let result = ""
+        for (item of buttons) {
+            item.addEventListener('click', (a) => {
+                buttonText = a.target.innerText;
+                if (buttonText == "*") {
+                    buttonText = "*"
+                    result += buttonText
+                    screen.value = result;
+                }
+                else if (buttonText == "C") {
+                    result = ""
+                    screen.value = result;
+                }
+                else if (buttonText == "=") {
+                    screen.value = eval(result);
+
+                }
+                else {
+                    result += buttonText
+                    screen.value = result;
+                }
+
+            }
+            )
+        }
+    </script>
+
+
+
+</body>
+
+</html>

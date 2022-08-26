@@ -8,10 +8,10 @@ function solve() {
     document.getElementById("display").value = y
 }
 
-function clear() {
+function del() {
     document.getElementById("display").value = ""
 }
 
-function backspace() {
-    document.getElementById("display").value = value.slice(length - 1)
+function bac() {
+    document.getElementById("display").value = value.substr(0,value.length-1);
 }
