@@ -13,5 +13,7 @@ function del() {
 }
 
 function bac() {
-    document.getElementById("display").value = value.substr(0,value.length-1);
+    let m = document.getElementById("display").value
+    let n = m.slice(0, - 1);
+    document.getElementById("display").value = n
 }
