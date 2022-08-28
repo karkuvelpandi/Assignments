@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neomorphism effects</title>
+    <style>
+        body {
+            background-color: #e5e5e5;
+        }
+
+        .container {
+            width: 1250px;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 50px;
+            background: #e5e5e5;
+        }
+
+        .frame {
+            width: 200px;
+            height: 200px;
+            background: #e5e5e5;
+            position: absolute;
+            left: 90px;
+            box-shadow: inset 7px 7px 5px gray,
+                inset -7px -7px 5px white, 7px 7px 5px gray;
+        }
+
+        .frame1 {
+            width: 160px;
+            height: 160px;
+            background: #e5e5e5;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            box-shadow: inset 7px 7px 5px gray,
+                inset -7px -7px 5px white, 7px 7px 5px gray;
+        }
+
+        .frame2 {
+            width: 120px;
+            height: 120px;
+            background: #e5e5e5;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            box-shadow: inset 7px 7px 5px gray,
+                inset -7px -7px 5px white, 7px 7px 5px gray;
+        }
+
+        .frame3 {
+            width: 80px;
+            height: 80px;
+            background: #e5e5e5;
+            position: absolute;
+            left: 60px;
+            top: 60px;
+            box-shadow: inset 7px 7px 5px gray,
+                inset -7px -7px 5px white, 7px 7px 5px gray;
+        }
+
+        .frame:hover {
+            background: red;
+            box-shadow: none;
+        }
+
+        .frame1:hover {
+            background: green;
+            box-shadow: none;
+        }
+
+        .frame2:hover {
+            background: blue;
+            box-shadow: none;
+        }
+
+        .frame3:hover {
+            background: yellow;
+            box-shadow: none;
+        }
+
+
+        button {
+            width: 150px;
+            height: 50px;
+            color: mediumblue;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            position: absolute;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            background: #e5e5e5;
+            box-shadow: -7px -7px 10px white, 7px 7px 10px gray;
+            left: 400px;
+            top: 300px;
+        }
+
+        button:hover {
+            background: #e5e5e5;
+            border: none;
+            position: absolute;
+            box-shadow: inset -7px -7px 10px white, inset 7px 7px 10px grey;
+        }
+
+        .circle {
+            width: 250px;
+            height: 250px;
+            position: relative;
+            margin-left: 230px;
+            box-shadow: -7px -7px 10px white, 7px 7px 10px grey;
+            border-radius: 50%;
+        }
+
+        .circle1 {
+            width: 210px;
+            height: 210px;
+            position: absolute;
+            left: 21px;
+            top: 19px;
+            box-shadow: inset -7px -7px 10px white, inset 7px 7px 10px gray;
+            border-radius: 50%;
+        }
+
+        .circle:hover {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            box-shadow: -7px -7px 10px white, inset -7px -7px 10px white, 7px 7px 10px grey, inset 7px 7px 10px grey;
+
+        }
+
+        .circle1:hover {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .circle,
+        .circle1:hover {
+            transition: 4s;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 1070px;
+            background: #e5e5e5;
+            border-radius: 40px;
+            box-shadow: -7px -7px 10px white, inset -7px -7px 10px white, 7px 7px 10px gray, inset 7px 7px 10px gray;
+
+        }
+
+        .box1 {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            background: #e5e5e5;
+            border-radius: 40px;
+            box-shadow: -7px -7px 10px white, inset -7px -7px 10px white, 7px 7px 10px gray, inset 7px 7px 10px gray;
+
+        }
+
+        .box1:hover {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 45px;
+            top: 45px;
+            background: #e5e5e5;
+            border-radius: 60px;
+            box-shadow: -7px -7px 10px white, inset -7px -7px 10px white, 7px 7px 10px green, inset 7px 7px 10px green;
+            animation: alternate;
+        }
+
+        .box,
+        .box1 {
+            transition: 4s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="frame">
+            <div class="frame1"></div>
+            <div class="frame2"></div>
+            <div class="frame3"></div>
+
+        </div>
+        <button>Don't touch me</button>
+
+        <div class="circle">
+            <div class="circle1"></div>
+        </div>
+        <div class="box">
+            <div class="box1">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
