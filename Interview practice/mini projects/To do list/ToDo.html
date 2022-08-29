@@ -48,7 +48,7 @@
         margin-top: 25px;
         outline: none;
         height: 26px;
-        box-shadow: 7px 7px 10px gray, 7px 7px 10px grey;
+        box-shadow: -7px -7px 10px gray, 7px 7px 10px grey;
 
     }
 </style>
@@ -71,6 +71,13 @@
             paragraph.classList.add('paragraph-styling')
             paragraph.innerText = display.value
             outputcontainer.appendChild(paragraph);
+            display.value = "";
+            paragraph.addEventlistener('click', function () {
+                paragraph.style.textDecoration = "line-through"
+            })
+            paragraph.addEventListener('dblclick', function () {
+                outputcontainer.removeChild(paragraph);
+            })
         })
     </script>
 
