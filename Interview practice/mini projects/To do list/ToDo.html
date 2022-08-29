@@ -1,12 +1,78 @@
 <html>
 
 <head>
-
+    <title>To do list</title>
 </head>
 
+<style>
+    body {
+        width: 50%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container {
+        width: 360px;
+    }
+
+    input {
+        width: 300px;
+        height: 45px;
+        border: none;
+        box-shadow: inset 7px 7px 10px gray, 7px 7px 10px grey;
+        border-radius: 20px;
+        outline: none;
+        font-size: 25px;
+
+    }
+
+    button {
+        height: 50px;
+        width: 150px;
+        border: none;
+        margin-top: 25px;
+        box-shadow: inset 7px 7px 10px gray, 7px 7px 10px grey;
+        border-radius: 20px;
+        font-size: 30px;
+
+    }
+
+    .to-do {
+        margin-top: 25px;
+    }
+
+    .paragraph-styling {
+        margin: 0;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 25px;
+        outline: none;
+        height: 26px;
+        box-shadow: 7px 7px 10px gray, 7px 7px 10px grey;
+
+    }
+</style>
+
 <body>
+    <h1>To do List</h1>
+    <div class="container">
+        <input type="text" id="inputbox"><button id="buttonid"> Add</button>
+        <div class="to-dos" id="todobox">
 
+        </div>
+    </div>
 
+    <script>
+        let addbutton = document.getElementById("buttonid");
+        let outputcontainer = document.getElementById("todobox");
+        let display = document.getElementById("inputbox")
+        addbutton.addEventListener('click', function () {
+            var paragraph = document.createElement('p')
+            paragraph.classList.add('paragraph-styling')
+            paragraph.innerText = display.value
+            outputcontainer.appendChild(paragraph);
+        })
+    </script>
 
 </body>
 
