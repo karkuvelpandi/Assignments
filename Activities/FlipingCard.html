@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fliping Card</title>
+    <style>
+        body {
+            background: gray;
+        }
+
+        .container {
+            position: relative;
+            width: 250px;
+            height: 320px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 40%;
+            margin-top: 140px;
+        }
+
+        .card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.7s ease;
+
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .thefront {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: yellow;
+            color: black;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            border-radius: 25px;
+            box-shadow: 7px 7px 10px black, inset 5px 5px 8px black;
+
+        }
+
+        .theback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: green;
+            color: white;
+            transform: rotateY(180deg);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            border-radius: 25px;
+            box-shadow: 7px 7px 10px black, inset 5px 5px 8px black;
+
+
+        }
+
+        .photo {
+            width: 200px;
+            height: 150px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="thefront">
+                <div class="card-header">
+                    <img class="photo"
+                        src="https://www.freepnglogos.com/uploads/laptop-png/laptop-png-who-are-adventoris-4.png" />
+                </div>
+                <div class="card-body">
+                    <h2>Brand new Laptop</h2>
+                    <h4>With Intel core</h4>
+                    <p><b>Mouse-Over here for more details</b></p>
+                </div>
+            </div>
+            <div class="theback">
+                <div class="card-header">
+                    <h1>Specifications</h1>
+                    <ul>
+                        <li>Brand : Lenovo</li>
+                        <li>Core : Intel-7</li>
+                        <li>RAM : 8 GB</li>
+                        <li>Memory: 1 TB</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
