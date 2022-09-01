@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Home page</title>
+    <style>
+        a {
+            color: black;
+            padding: 5px;
+            background-color: white;
+        }
+
+
+        .container {
+            position: relative;
+            width: 350px;
+            height: 420px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 35%;
+            margin-top: 100px;
+
+        }
+
+
+        .card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.7s ease;
+            border-radius: 25px;
+
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+
+        }
+
+        .thefront {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: yellow;
+            color: black;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            border-radius: 25px;
+            box-shadow: 7px 7px 10px black, inset 5px 5px 8px black;
+
+        }
+
+        .theback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: green;
+            color: white;
+            transform: rotateY(180deg);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            border-radius: 25px;
+            box-shadow: 7px 7px 10px black, inset 5px 5px 8px black;
+
+
+        }
+
+        body {
+            background: grey;
+        }
+
+        .form-group {
+            width: 90%;
+
+
+        }
+    </style>
+
+
+</head>
+<nav class="navbar navbar bg-primary navbar expand-lg">
+    <img src="https://yt3.ggpht.com/PyzM_lD_IO10kAR1sMCvTtHVJvlJvWU-FRL5oUW87EfhWL4rpz3W_A2nHY6mOCVUM-a6FeoAsQ=s900-c-k-c0x00ffffff-no-rj"
+        height="80" alt="Logo" />
+
+    <ul class="navbar nav">
+        <li class="nav-list"><a href="./index.html">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-list"><a href="./contact.html"> contact page</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-list"><a href="./miniactivities.html">Mini activities</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-list"><a href="./blogsandlinks.html">Blogs and links</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <div class="thefront"><br>
+            <h2>Login form</h2>
+            <form id="form" class="form-group">
+                <input class="form-control" type="text" id="username" placeholder="Usename">
+                <input class="form-control" type="email" id="email" placeholder="Email">
+                <input class="form-control" type="password" id="password" placeholder="Password">
+
+            </form>
+        </div>
+        <div class="theback">
+
+        </div>
+
+    </div>
+</div>
+
+
+<body>
+
+</body>
+
+</html>
