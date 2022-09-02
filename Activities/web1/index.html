@@ -35,7 +35,6 @@
             transform-style: preserve-3d;
             transition: all 0.7s ease;
             border-radius: 25px;
-
         }
 
         .card:hover {
@@ -66,6 +65,8 @@
             background: green;
             color: white;
             transform: rotateY(180deg);
+            align-items:center:
+            justify-content:center;
             text-align: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: medium;
@@ -81,9 +82,13 @@
 
         .form-group {
             width: 90%;
-
+            margin-left: 1.2rem;
 
         }
+        .photo1{
+          width:10%;
+        }
+        
     </style>
 
 
@@ -104,14 +109,22 @@
     <div class="card">
         <div class="thefront"><br>
             <h2>Login form</h2>
-            <form id="form" class="form-group">
-                <input class="form-control" type="text" id="username" placeholder="Usename">
-                <input class="form-control" type="email" id="email" placeholder="Email">
-                <input class="form-control" type="password" id="password" placeholder="Password">
+            <div class="card-body">
+                <form id="form" class="form-group">&nbsp;
+                    <input class="form-control" type="text" id="username" placeholder="Usename">
+                    &nbsp; <input class="form-control" type="email" id="email" placeholder="Email">
+                    &nbsp; <input class="form-control" type="password" id="password" placeholder="Password">
 
-            </form>
+                </form>
+            </div>
         </div>
         <div class="theback">
+            <div class="card-body">
+                <h1>You have Successfully Done the Login</h1>
+               <div id="photo1"> 
+                <img 
+                    src="https://c.tenor.com/0EflySmYSuAAAAAj/check-mark-button-joypixels.gif" />
+            </div></div>
 
         </div>
 
