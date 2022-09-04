@@ -101,6 +101,15 @@
             background-color: blue;
             color: beige;
         }
+
+        .form-group error {
+            color: red;
+            border-color: red;
+        }
+
+        .form-group success {
+            border-color: green;
+        }
     </style>
 
 
@@ -122,13 +131,15 @@
         <div class="thefront"><br>
             <h2>Login form</h2>
             <div class="card-body">
-                <form id="form" class="form-group">&nbsp;
-                    <input class="form-control" type="text" id="username" placeholder="Usename">
-                    <small class="alartmessage"></small>
-                    &nbsp; <input class="form-control" type="email" id="email" placeholder="Email">
-                    <small class="alartmessage"></small>
-                    &nbsp; <input class="form-control" type="password" id="password" placeholder="Password"><br><br>
-                    <small class="alartmessage"></small>
+                <form id="form" class="form">&nbsp;
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="username" placeholder="Usename">
+                        <small class="alartmessage"></small>
+                        &nbsp; <input class="form-control" type="email" id="email" placeholder="Email">
+                        <small class="alartmessage"></small>
+                        &nbsp; <input class="form-control" type="password" id="password" placeholder="Password"><br><br>
+                        <small class="alartmessage"></small>
+                    </div>
                     <button value="submit" id="but">Submit</button>
 
                 </form>
@@ -153,12 +164,13 @@
     let button = document.getElementsById("button")
     let form = document.getElementsById("form")
 
-    form.eventlistener("click", (e) => {
-        e.preventDefalut;
-        checkForm();
+    form.addEventListener("submit", (e) => {
+        e.preventDefault(form);
+        checkInputs();
     })
 
-    function checkForm() {
+
+    function checkInputs() {
         if (username === "") {
             setError(username, 'Please fill the username')
 
@@ -168,9 +180,15 @@
         }
 
     }
-    function setError(username, message) {
-        let samll = document.getElementsByClassName("alartmessage").value
+    function setError(input, message) {
+        const formInputs = input.parentElement;
+        let samll = formInputs.quaryselectorAll("small")
+        formInputs.classname = "form-group error"
         samll.innerHtml = message
+    }
+    function setSuccess(input) {
+        const formInputs = input.parentElement;
+        formInputs.classname = "form-group success"
     }
 
 </script>

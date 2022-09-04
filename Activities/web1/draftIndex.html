@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Home page</title>
+    <style>
+        .form-group error {
+            color: red;
+            border-color: red;
+        }
+
+        .form-group success {
+            border-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form" class="form">
+
+        <label for="">Username</label>
+        <input type="text" id="username">
+        <small id="error"> </small>
+        <label for="">Password</label>
+        <input type="password" id="password">
+
+        <button>Submit</button>
+    </form>
+
+    <script>
+        const form = document.getElementById("form")
+        const username = document.getElementById("username");
+        const password = document.getElementById("password");
+        const errorElement = document.getElementById("error");
+
+
+        form.addEventListener("submit", (e) => {
+
+            e.preventDefault(form);
+        })
