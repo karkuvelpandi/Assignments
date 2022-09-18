@@ -36,18 +36,18 @@
             transition: all 0.7s ease;
             border-radius: 25px;
         }
-
+/* 
         .card:hover {
-            transform: rotatey(180deg);
+            transform: rotatey(180deg); */
 
-        }
+        /* } */
 
         .thefront {
             position: relative;
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
-            background: yellow;
+            background: rgb(232, 232, 217);
             color: black;
             text-align: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -133,16 +133,17 @@
             <div class="card-body">
                 <form id="form" class="form">&nbsp;
                     <div class="form-group">
-                        <input class="form-control" type="text" id="username" placeholder="Usename">
-                        <small class="alartmessage"></small>
-                        &nbsp; <input class="form-control" type="email" id="email" placeholder="Email">
-                        <small class="alartmessage"></small>
-                        &nbsp; <input class="form-control" type="password" id="password" placeholder="Password"><br><br>
-                        <small class="alartmessage"></small>
+                        <input class="form-control"  type="text" id="username" placeholder="Usename"/>
+                        <p style=color:black class="al"></p>
+                        &nbsp; <input class="form-control" type="email" id="email" placeholder="Email"/>
+                        <small class="alertmessage"></small>
+                        &nbsp; <input class="form-control" type="password" id="password" placeholder="Password"/><br><br>
+                        <small class="alertmessage"></small>
                     </div>
                     <button value="submit" id="but">Submit</button>
 
                 </form>
+               
             </div>
         </div>
         <div class="theback">
@@ -151,28 +152,30 @@
                 <div class="photo1">
                     <img src="https://c.tenor.com/0EflySmYSuAAAAAj/check-mark-button-joypixels.gif" />
                 </div>
-            </div>
+             </div>
 
         </div>
-
-    </div>
+ 
+        </div>
 </div>
 <script>
-    let username = document.getElementsById("username")
-    let password = document.getElementsById("password")
-    let email = document.getElementsById("email")
-    let button = document.getElementsById("button")
-    let form = document.getElementsById("form")
+     let username = document.getElementById("username").innerHTML
+    let password = document.getElementById("password").innerHTML
+    let email = document.getElementById("email").innerHTML
+    let button = document.getElementById("but")
+    let form = document.getElementById("form")
 
     form.addEventListener("submit", (e) => {
         e.preventDefault(form);
+        console.log("event");
         checkInputs();
     })
 
 
     function checkInputs() {
-        if (username === "") {
-            setError(username, 'Please fill the username')
+        
+        if (username == "") {
+            return setError( 'Please fill the username')
 
         }
         else {
@@ -180,13 +183,18 @@
         }
 
     }
-    function setError(input, message) {
-        const formInputs = input.parentElement;
-        let samll = formInputs.quaryselectorAll("small")
-        formInputs.classname = "form-group error"
-        samll.innerHtml = message
+    function setError( message) {
+        console.log("seterror");
+        console.log(message);
+        
+        
+        document.getElementsByTagName("p")[0].innerHTML = message;
+       
+    
+        
     }
     function setSuccess(input) {
+        console.log("setsuccess");
         const formInputs = input.parentElement;
         formInputs.classname = "form-group success"
     }
