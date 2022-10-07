@@ -1,13 +1,10 @@
-let a="rama"
-let b="aram"
+let a= "rotator"
 
-let string1=a.split('').sort().join('')
-let string2=b.split('').sort().join('')
+let str=a.split('').reverse().join('')
 
-if(string1===string2){
-    console.log('True');
+if(a===str){
+    console.log("Dude its a palindrome");
 }
 else{
-    console.log("False");
+    console.log("no dude its not a palindrome clean your eyes and see");
 }
-/* console.log(a[0]); */

@@ -41,9 +41,35 @@ else {
 
 //Assignment no : 11 Ascending Order
 let array=[a,b,c]
-array.sort((a,b)=>a-b);
+array.sort();
 console.log(array);
 
 //Assignment no : 12 Descending  Order
-array.sort((a,b)=>b-a);
+array.sort();
 console.log(array);
+
+//Hutech assignment finding Max and Min value without sort()  inside an array
+
+let ara=[5,52,8]  
+
+let [m,n,o]=ara    //Array destructuring
+
+console.log(m);
+console.log(n);
+console.log(o);
+
+let ax=Math.min(m,n,o) //Min value
+console.log(ax);
+
+let ay=Math.max(m,n,o)  //Max value
+console.log(ay);
+
+let az=eval(m+n-o)  //Evaluvating the value
+console.log(az);
+
+// Substr or Substring (both are same only) method
+let srt="Karkuvel007@gmail.com"
+console.log(srt.substr(0,8));
+console.log(srt.substr(srt.indexOf("@")+1));
+console.log(srt.substring(0,srt.indexOf("@")));
+// console.log(srt.substring(srt.startsWith("@",14)));
