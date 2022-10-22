@@ -6,6 +6,7 @@ let str="zewmyde"
 result=str.substr(0,5)
 console.log(result.length);
 
+
 //output 3
 
 let str3 = "moosmyf"
