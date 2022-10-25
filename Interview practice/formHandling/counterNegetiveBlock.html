@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="./form.css"/>
+</head>
+<body>
+    <input type="number" oninput="check()" id="counter">
+    <p id="message"></p>
+</body>
+<script>
+let input=document.getElementById("counter")
+let check=()=>{
+    if(input.value<=0){             /*  document.getElementById("counter").value=0 */
+         document.getElementById("message").innerHTML="Please fill positive numbers" 
+    }else if(input.value>0){document.getElementById("message").innerHTML=""}
+    if(input.value%2===0 || input.value%2===1 ){
+        num= Math.floor(input.value)
+        eval(num+2)>2 ? document.getElementById("message").innerHTML=eval(num+2)+","+eval(num+4)+","+eval(num+6):document.getElementById("message").innerHTML=""
+        
+        };
+ }
+</script>
+</html>
