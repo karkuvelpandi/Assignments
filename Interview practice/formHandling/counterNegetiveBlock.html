@@ -14,14 +14,17 @@
 <script>
 let input=document.getElementById("counter")
 let check=()=>{
-    if(input.value<=0){             /*  document.getElementById("counter").value=0 */
+    if(input.value<=0){               document.getElementById("counter").value=0 
          document.getElementById("message").innerHTML="Please fill positive numbers" 
-    }else if(input.value>0){document.getElementById("message").innerHTML=""}
+    }
+    else if(input.value>0){
+        document.getElementById("message").innerHTML=""
+    }
     if(input.value%2===0 || input.value%2===1 ){
         num= Math.floor(input.value)
         eval(num+2)>2 ? document.getElementById("message").innerHTML=eval(num+2)+","+eval(num+4)+","+eval(num+6):document.getElementById("message").innerHTML=""
         
-        };
+    };
  }
 </script>
 </html>
