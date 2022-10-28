@@ -7,7 +7,7 @@ let array=[{
     skill:["Bootstrap","react"]
 }]
 
-// arr = array[0].skill
+arr = array[0].skill
 // console.log(array[0].skill);
 
 let output=[]
@@ -18,3 +18,5 @@ array.map((a)=>{
     output.push(c,b)
 })
 console.log(output)
+let x=a.concat(a)
+console.log(x);
