@@ -10,6 +10,7 @@ let new_obj = {...obj, ...obj2.push("React") }
 console.log(new_obj) */
 
 
+
 // Adding new property to object
 let obj = {
     id : 1,
