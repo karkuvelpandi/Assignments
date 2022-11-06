@@ -1,21 +1,34 @@
-<html>
-    <head>
-        <title> CSS Test Program</title>
-        <style>
-            h1{
-                color: aliceblue;
-                background-color: black ;
-                
-            }
-        </style>
 
-        <link rel="stylesheet" href="./One.css">
-    </head>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#div1 {
+  width: 400px;
+  height: 400px;
+  background: url(https://www.w3schools.com/w3css/img_lights.jpg);
+}
+</style>
+<script>
+function move() {
+  var elem = document.getElementById("div1");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+</head>
 <body>
-    <h1><b>Text color testing</b></h1>
-    <h2>Testing blue </h2>
-    <h3 style="background-color:yellow  ; color: blue;"><b><i>Testing inline CSS</i></b></h3>
-    <p class="jho"> Efforts never lie</p>
-    <p id="007"> Everyone mind is different universe</p>
+
+<div id="div1" onmouseover="move()"></div>
+
 </body>
 </html>
