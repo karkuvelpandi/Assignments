@@ -13,7 +13,7 @@ while(i<=5){
 
 
 
-  for (let i=1;i<=5;i++){
+for (let i=1;i<=5;i++){
     setTimeout(()=>{
         console.log(i);
     },i*2000)
