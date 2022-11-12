@@ -45,15 +45,14 @@
                         <input type="button" class="btn btn-warning" value="C" onclick="del()" />&nbsp;&nbsp;
                         <input type="button" class="btn btn-warning" value="<==" onclick="bac()" />
 
-                        
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>function input(a) {
-            document.getElementById("display").value += a
+    <script>
+    function input(a) {
+            document.getElementById("display").value = document.getElementById("display").value+ a
         }
 
         function solve() {
