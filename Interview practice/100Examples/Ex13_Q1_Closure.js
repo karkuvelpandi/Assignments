@@ -1,4 +1,4 @@
-function add(a){               //  Q1
+function add(a){                            //  Q1   Closure
     return function addNum(b){
            return a+b
      } 
@@ -8,7 +8,7 @@ function add(a){               //  Q1
  console.log(result);
 //*************************** */
 
-let string="AaBbCcDdEeE"                     // Q2
+let string="AaBbCcDdEeE"                     // Q2        Duplicate removal
 var lowStr=string.toLowerCase() .split("")  
 
 let removeDuplicates=(lowStr)=>{
@@ -18,36 +18,67 @@ let newStr=removeDuplicates(lowStr)
 console.log(newStr);
 //************************************** */
 
-const array=["2","3","a","5","b","4","c"]
-
- let newArr=[]
- let numArr=[]
- let strArr=[]
-for(arr of array){
-  newArr.push(isNaN(arr)===false?Math.floor(arr):arr)
-} 
-for(a of newArr){
-if(isNaN===true){
-    numArr.push(a)
+const array=["2","3","a","5","b","4","c"]     //Q3        Separate and add strings and number in string
+var res1=0;
+var res2="";
+for (a of array){
+    if(isNaN(Math.floor(a))===false){
+        res1=res1+ Math.floor(a)
+    }
+    else if (isNaN(Math.floor(a))===true){
+        res2=res2+a
+    }
 }
-else if(isNaN===false){
-    strArr.push(a)
+console.log(res1);
+console.log(res2);
+
+/* var res = 0;                             // Reference for array value SUM
+for (i=0; i < array.length; i++) {            
+     res += array[i]
 }
+console.log(res); */
+
+/* let numArr=[]                             // Failed tryout 
+let strArr=[]
+for (a of array){
+    if(isNaN(Math.floor(a))===false){numArr.push(a)}
+    if (isNaN(Math.floor(a))===true){strArr.push(a)}
 }
+let result1=numArr.reduce((a,b)=>a+b)
+let result2=strArr.reduce((a,b)=>a+b)
 
-for (let i = 0; i < numArr.length; i++) {
-    sum += numArr[i];
+console.log(result1);
+console.log(result2); */
+
+/****************************************************************** */
+
+ const nested=[1,2,3,[4,5,[6,7,[8]]]]                   //Q4  Convert nested array to single array without flat method
+const single =[]
+for(arr1 of nested){
+      if(isNaN(arr1)===false){
+        single.push(arr1)
+      }
+      else {
+        for(arr2 of arr1){
+          if(isNaN(arr2)===false){
+              single.push(arr2)
+          }
+          else{
+            for (arr3 of arr2){
+                if(isNaN(arr3)===false){
+                    single.push(arr3)
+                 }
+            }
+          }
+        }
+      }
 }
+console.log(single);
 
 
-
-
-
-
-/* for(a of newArr){        
-    if(typeof(a)){
-       b=a
-       c=a+1
-       console.log(b+c);
-   } 
-}  */
+/*  let a7=[8]
+let a8=[1,2]
+ for(a1 of a7){
+    a8.push(a1)
+ }
+ console.log(a8); */
