@@ -8,7 +8,7 @@ function add(a){                            //  Q1   Closure
  console.log(result);
 //*************************** */
 
-let string="AaBbCcDdEeE"                     // Q2        Duplicate removal
+let string="AaBbCcDdEeE"                     // Q2    Duplicate removal
 var lowStr=string.toLowerCase() .split("")  
 
 let removeDuplicates=(lowStr)=>{
