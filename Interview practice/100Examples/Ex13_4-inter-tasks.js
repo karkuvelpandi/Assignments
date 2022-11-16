@@ -6,7 +6,7 @@ function add(a){                            //  Q1   Closure
  let newAdd=add(5)
  let result=newAdd(4)
  console.log(result);
-//*************************** */
+//*************************************************************/
 
 let string="AaBbCcDdEeE"                     // Q2    Duplicate removal
 var lowStr=string.toLowerCase() .split("")  
@@ -16,7 +16,7 @@ let removeDuplicates=(lowStr)=>{
 } 
 let newStr=removeDuplicates(lowStr)
 console.log(newStr);
-//************************************** */
+//**********************************************************/
 
 const array=["2","3","a","5","b","4","c"]     //Q3        Separate and add strings and number in string
 var res1=0;
@@ -50,7 +50,7 @@ let result2=strArr.reduce((a,b)=>a+b)
 console.log(result1);
 console.log(result2); */
 
-/****************************************************************** */
+/*******************************************************************/
 
 const nested=[1,2,3,[4,5,[6,7,[8]]]]              //Q4  Convert nested array to single array without flat method
 const single =[]
@@ -90,4 +90,4 @@ let a8=[1,2]
  }
  console.log(a8); */
 
- /**************************************************************** */
+ /*****************************************************************/
