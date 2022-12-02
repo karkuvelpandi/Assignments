@@ -81,7 +81,20 @@ for(arr1 of nested){
       }
 }
 console.log(single);
+                           /// Good practice dont hard code
+let resultArray=[]
 
+let getElement=(nested)=>{
+      for (a1 of nested)
+        if(Array.isArray(a1)){
+            getElement(a1)
+        }
+        else{
+            resultArray.push(a1)
+        }
+}
+getElement(nested)
+console.log(resultArray);
 
 /*  let a7=[8]
 let a8=[1,2]
