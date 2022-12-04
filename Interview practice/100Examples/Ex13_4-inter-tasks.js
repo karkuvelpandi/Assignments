@@ -14,8 +14,15 @@ var lowStr=string.toLowerCase() .split("")
 let removeDuplicates=(lowStr)=>{
     return lowStr.filter((item,index)=>lowStr.indexOf(item)===index)
 } 
+// let removeDuplicates=(lowStr)=>{
+//     return lowStr.filter((item,index)=>{
+//        if(lowStr.indexOf(item)===index) {
+//            return item
+//        }
+//    })
+// } 
 let newStr=removeDuplicates(lowStr)
-console.log(newStr);
+console.log(newStr.join(""));
 //**********************************************************/
 
 const array=["2","3","a","5","b","4","c"]     //Q3        Separate and add strings and number in string
