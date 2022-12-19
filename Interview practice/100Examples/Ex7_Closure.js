@@ -6,6 +6,7 @@ function number(){
 
 number() 
 
+
 function outer(out){
     function inner(inner){
 
