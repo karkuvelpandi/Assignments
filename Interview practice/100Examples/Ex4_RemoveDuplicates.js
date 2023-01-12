@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 /* var arr = [1, 2, 3, 4, 5, 2, 4]
 console.log(arr);
 
+=======
+var arr=[1,2,3,4,5,2,4]
+console.log(arr);
+>>>>>>> 50781d15bb51bb937de84b0874f00aedfc53cbc9
 console.log(arr.length);
 
 function removeDuplicates() {
@@ -9,6 +14,7 @@ function removeDuplicates() {
 }
 console.log(removeDuplicates(arr))
 console.log(removeDuplicates(arr).length)
+
 //default method for removing duplicate
 let newArr = [...new Set(arr)]
 console.log(newArr) */

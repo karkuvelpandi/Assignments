@@ -5,8 +5,8 @@
      skills : ["HTML", "CSS", "JS"]
  }
  console.log(obj)
- let obj2 = obj.skills
- let new_obj = {...obj, ...obj2.push("React") }
+//  let obj2 = obj.skills
+ let new_obj = {...obj, ...obj.skills.push("React") }
  console.log(new_obj)
 
 
