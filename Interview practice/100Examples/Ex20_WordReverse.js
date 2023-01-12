@@ -1,4 +1,4 @@
-let str="hi karkuvel"
+let str="hi kishore"
 let ans=[]
 let result=str.split(" ").map((word)=>{
        ans.unshift(word)

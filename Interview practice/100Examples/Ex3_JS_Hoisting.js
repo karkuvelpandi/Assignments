@@ -4,7 +4,7 @@ var a = 10
 
 
 var a1;
-console.log(a1);             // output undefined   
+console.log(a1);        // output undefined   
 a1 = 5;
 
 
@@ -13,8 +13,8 @@ var b = 5;
 
 
 b = 5
-console.log(c);              //output---Reference error : cannot access b before initialization
-let c = 10 //or const c=10
+console.log(c);         //output---Reference error : cannot access b before initialization
+let c = 10               //or const c=10
 
 
 console.log(d);              //output---Reference error : cannot access d before initialization
