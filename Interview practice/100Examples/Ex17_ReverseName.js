@@ -1,4 +1,4 @@
-var name="Laksmi"
+var name="Lakshmi"
 // var name1=name.split("")
 // console.log(name1);
 let result=[]

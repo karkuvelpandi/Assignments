@@ -28,6 +28,10 @@ console.log(newStr.join(""));
 const array=["2","3","a","5","b","4","c"]     //Q3        Separate and add strings and number in string
 var res1=0;
 var res2="";
+
+
+
+
 for (a of array){
     if(isNaN(Math.floor(a))===false){
         res1=res1+ Math.floor(a)
