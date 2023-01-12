@@ -3,16 +3,16 @@
 let array = [1, 2, 3, 4, 5, 6]
 
 let n = 8
-let b="";
-let c=""; 
+// let b="";
+// let c=""; 
 
 //using for of loop
 for (let a of array){
    for(let x of array){
-    b=a
-    c=x
-   if(b+c===8) {
-    console.log(b,c);
+    // b=a
+    // c=x
+   if(a+x===8) {
+    console.log(a,x);
    }
    }
     }
