@@ -5,8 +5,9 @@ let obj = {
     name : "abc",
     skills1 : ["HTML", "CSS", "JS"]
 }
-console.log(obj)
-let obj2 = obj.skills1
-let new_obj = {...obj, skills1 : ["React", "Node"] }
 
-console.log(new_obj)
+console.log(obj)
+//  let obj2 = obj.skills
+ let new_obj = {...obj, ...obj.skills1.push("React","NodeJs") }
+ console.log(new_obj)
+
