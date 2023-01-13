@@ -63,7 +63,7 @@ console.log(result2); */
 
 /*******************************************************************/
 
-const nested=[1,2,3,[4,5,[6,7,[8]]]]              //Q4  Convert nested array to single array without flat method
+const nested=[1,[9,2],2,3,[4,5,[6,7,[8]]]]              //Q4  Convert nested array to single array without flat method
 const single =[]
 for(arr1 of nested){
       if(typeof(arr1)==="number"){                 //Can use " if(isNaN(arr1)===false){ " Also
