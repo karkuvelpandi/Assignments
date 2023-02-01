@@ -2,12 +2,12 @@
 //Pre defining the arguments by using bind or closure is known as currying
 
 let multi=(x,y)=>{
-   console.log(x*y);
+   console.log(x,y);
 }
                                  // Presetting the argument using bind method
-let multiBind=multi.bind(this,5) // if we bind 2 arguments it will ignore the argument 
-multiBind(6)                     //  which will passing during calling
-
+let multiBind=multi.bind(this,"HI") // if we bind 2 arguments it will ignore the argument 
+multiBind("Karkuvel")                     //  which will passing during calling
+multiBind()
 
 //second way of currying this is also a closure
 

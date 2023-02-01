@@ -13,11 +13,11 @@ var b = 5;
 
 
 b = 5
-console.log(c);         //output---Reference error : cannot access b before initialization
+// console.log(c);         //output---Reference error : cannot access b before initialization
 let c = 10               //or const c=10
 
 
-console.log(d);              //output---Reference error : cannot access d before initialization
+// console.log(d);              //output---Reference error : cannot access d before initialization
 let d = 10  //or const d=10
 
 
@@ -28,9 +28,9 @@ var e = 4;
 function greet() {
     f = 'hello';
     console.log(f); // hello
-    var f;
+    var f="hi";
 }
 
 greet(); // hello
-console.log(f);    // reference error due to value "f" hoisting is work within the function scope.
+// console.log(f);    // reference error due to value "f" hoisting is work within the function scope.
                    //  It will not avail in the global scope
