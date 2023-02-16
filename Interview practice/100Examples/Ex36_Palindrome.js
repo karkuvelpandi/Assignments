@@ -52,4 +52,5 @@ function palindrome(str) {
   }
   return true; 
  }
- 
+ let result=palindrome("rotator")
+ console.log(result);
