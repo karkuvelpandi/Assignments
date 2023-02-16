@@ -50,5 +50,5 @@ console.log('length :', myArray.length);
 
 console.log('Elements:');
 for (const element of myArray){
-    console.log('\t', element);
+    console.log( element);
 }
