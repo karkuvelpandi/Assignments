@@ -6,4 +6,4 @@ function factorial(x){
       return  (x*factorial(x-1))
     }
 }
-console.log(`the factorial of 5 is ${factorial(5)}`);
+console.log(`the factorial of 5 is ${factorial(8)}`);
