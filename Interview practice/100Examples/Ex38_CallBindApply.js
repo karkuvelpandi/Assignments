@@ -42,3 +42,13 @@ commonFun.apply(object,["tamilnadu",'india'])
 
 let bindedFun=commonFun.bind(object2,"kn","india")
 bindedFun()
+
+
+
+// Bind method behaviour in faf
+let wish=(a,b)=>{
+   console.log(a.name,b);
+}
+
+let greet=wish.bind(this,object)
+greet("gn")
