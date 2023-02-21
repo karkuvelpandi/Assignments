@@ -9,7 +9,7 @@ for (item of buttons) {
         screen.value += buttonText;
 
         if (buttonText == "C") {
-            let result = ""
+            let result = "" 
             screenValue += ""
         }
         else if (buttonText == "=") {
