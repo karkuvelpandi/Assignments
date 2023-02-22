@@ -21,11 +21,6 @@ console.log(result);
 
 // PRINTING PRIME NUMBER
 
-//   for(i=2;i<=29;i++){
-//      if(isPrime(i)){
-//         console.log(i);
-//      }
-//   }
 
 let count=0
 let num=2

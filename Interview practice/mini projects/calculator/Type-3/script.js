@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         item.addEventListener('click', (e) => {
             buttonText = e.target.innerText
             console.log(buttonText)
+           
             if(buttonText==="x"){
                 buttonText="*"
             }
@@ -26,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
             else if(buttonText === "C"){
                 screen.innerHTML=screen.innerHTML.slice(0,screen.innerHTML.length-1)
           }
-            else{
+            else {
+              
                 screen.innerHTML = screen.innerHTML + buttonText
             }
         })
