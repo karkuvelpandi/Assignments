@@ -11,7 +11,7 @@ function isPrime(num){
     }
     return true
 }
-let result=isPrime(45)
+let result=isPrime(2)
 console.log(result);
 // console.log(Math.sqrt(15));
 // console.log(2%1.4142135623730951===0);
